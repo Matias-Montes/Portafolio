@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+  }
+
+body {
+    position: absolute;   
+    width: 100vw;
+    background-color: #F5F5F5;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* edicion del nav */
+
+.nav_img {
+    width: 50px;
+    height: 35px;
+    margin-right: 5px;    
+}
+
+.navbar {
+    padding: 0 150px;
+}
+
+.navbar-nav {
+    margin-left: 280px;
+}
+
+
+
+/* edicion del main */
+
+main {
+    height: auto;
+    display: flex;
+    margin: 50px 150px;
+    align-items: center;
+}
+
+.main_text {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.main_tittle h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.main_tittle p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.main_tittle a {
+    font-size: 1.1rem;
+    font-weight: 1000;
+}
+.main_tittle img {
+    margin: 0 45px 0 10px ;
+}
+
+.main_left {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_img {
+    width: 368px;
+    height: 368px;
+    border-radius: 50px;
+}
+
+/* edicion Sobre mi*/
+
+#aboutMe {
+    padding: 50px 150px;
+    background-color: #EAF2FD;
+}
+
+.about_me {
+    width: 65%;
+}
+
+.about_me h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about_me p {
+    margin-bottom: 15px;
+}
+
+/* edicion skills and hobbies */
+
+.section_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 150px;
+}
+
+.skill_tittle {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.skill_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.habilidad {
+    padding: 90px 0 0 15px;
+    background-color: rgb(212, 212, 212);
+    width: 150px;
+    height: 150px;
+    margin: 10px;    
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1439px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width: 1206px){
+    .navbar-nav {
+        margin-left: 150px;
+    }
+
+}
+
+@media (max-width: 1050px){
+    .navbar-nav {
+        margin-left: 60px;
+    }
+    main {          
+        margin: 50px;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .main_img {
+        margin-bottom: 50px;
+    }
+    #aboutMe {
+        padding: 10px 50px;
+
+}
+@media (max-width: 720px){
+main {          
+    margin: 50px;
+    flex-direction: column-reverse;
+    align-items: start;
+}
+.main_img {
+    margin-bottom: 50px;
+}
+}
+
+@media (max-width: 440px) {
+    .main_img {
+        width: 300px;
+        height: 300px;
+    }
+
+}
