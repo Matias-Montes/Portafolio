@@ -77,7 +77,7 @@ main {
     font-weight: 1000;
 }
 .main_tittle img {
-    margin: 30px;
+    margin: 10px;
 }
 
 .main_left {
@@ -130,6 +130,7 @@ main {
 
 .skill_list {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -139,6 +140,28 @@ main {
     width: 150px;
     height: 150px;
     margin: 10px;    
+}
+
+/* Editar formacion  */
+
+#estudios {
+    padding: 50px 150px;
+    background-color: #EAF2FD;
+}
+
+.estudios_div {
+    width: 280px;
+    background-color: #fff;
+    text-align: center;
+    border: 5px double black;
+    margin: 10px;
+
+
+}
+
+.estudios_img {
+    max-height: 250px ;
+    width: auto;
 }
 
 /*boton para subir */
@@ -181,30 +204,39 @@ main {
     main {          
         margin: 50px;
         flex-direction: column-reverse;
-        align-items: start;
+        align-items: center;
     }
     .main_img {
         margin-bottom: 50px;
     }
     #aboutMe {
         padding: 10px 50px;
+    }
+    #estudios {
+        
+        padding: 0;
+    }
 
 }
 @media (max-width: 720px){
 main {          
-    margin: 50px;
     flex-direction: column-reverse;
     align-items: start;
 }
 .main_img {
-    margin-bottom: 50px;
+    margin-bottom: 0 50px 0 50px;
 }
 }
 
 @media (max-width: 440px) {
     .main_img {
+        margin: 20px 0 0 20px;
         width: 300px;
         height: 300px;
     }
+    main {          
+        margin: 0;
+    }
+   
 
 }
