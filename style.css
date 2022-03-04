@@ -1,26 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
-
-/* font-family: 'Raleway', sans-serif; */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-  }
-
-
-
-body {
-    position: absolute;   
-    width: 100vw;
-    background-color: #F5F5F5;
+body{
+      overflow-x: hidden;
+      
 }
 
-
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+.navbar-nav li:hover {
+    border-radius: 9px;
+    background-color: #fff;
+	-webkit-animation: text-pop-up-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text-pop-up-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 ul {
@@ -29,6 +20,10 @@ ul {
 
 
 /* edicion del nav */
+
+#nav {
+    background-color:#EAF2FD !important;
+}
 
 .nav_img {
     width: 50px;
@@ -49,15 +44,17 @@ ul {
 main {
     height: auto;
     display: flex;
-    margin: 50px 150px;
+    justify-content: space-around;
     align-items: center;
+    padding: 50px 80px ;
 }
 
 .main_text {    
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 50px;
+    
 }
 
 .main_tittle h2 {
@@ -71,12 +68,27 @@ main {
     font-weight: bold;
 }
 
+#escribir {
+    font-size: 22px;
+    font-weight: bold;
+    display: inline;
+    border-right: 3px solid black;
+    background-color: #a7d7e2;
+    }
+
 .main_tittle a {
     font-size: 1.1rem;
     font-weight: 1000;
 }
+
+.main_tittle a:hover {
+    color: red;
+    text-decoration: underline !important;
+}
+
 .main_tittle img {
     margin: 10px;
+    
 }
 
 .main_left {    
@@ -89,6 +101,7 @@ main {
     width: 368px;
     height: 368px;
     border-radius: 50px;
+    
 }
 
 /* edicion Sobre mi*/
@@ -140,6 +153,13 @@ main {
     margin: 10px;    
 }
 
+.habilidad:hover {
+    
+    -webkit-animation: shake-right 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: shake-right 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+
 /* Editar formacion  */
 
 #estudios {
@@ -153,9 +173,8 @@ main {
     text-align: center;
     border: 5px double black;
     margin: 10px;
-
-
 }
+
 
 .estudios_img {
     max-height: 250px ;
@@ -246,6 +265,105 @@ main {
 }
 
 
+@-webkit-keyframes text-pop-up-br {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(5px) translateX(5px);
+              transform: translateY(5px) translateX(5px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+  }
+  }
+  @keyframes text-pop-up-br {
+    0% {
+      -webkit-transform: translateY(0) translateX(0);
+              transform: translateY(0) translateX(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(5px) translateX(50px);
+              transform: translateY(5px) translateX(5px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+  }
+  }
+
+  @-webkit-keyframes shake-right {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  @keyframes shake-right {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  
+
 /* Responsive */
 
 @media (max-width: 1439px) {
@@ -285,6 +403,9 @@ main {
     }
 
 }
+
+
+
 
 @media (max-width: 800px){
 
