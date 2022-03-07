@@ -14,4 +14,4 @@ const maquinaDeEscribir = (text = '', tiempo = 200, etiqueta = '') => {
     }, tiempo)
 }
 
-maquinaDeEscribir('Desarrollador Full-Stack y Diseñador Web.    ',100,escritura)
+maquinaDeEscribir('Desarrollador Full-Stack y Diseñador Web.           ',100,escritura)
