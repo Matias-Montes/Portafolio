@@ -1,3 +1,20 @@
+@font-face {
+    font-family: bourdos;
+    src: url(/fonts/Bourdos.otf);
+}
+@font-face {
+    font-family: Magestic;
+    src: url(/fonts/Majestic\ Schnozz.ttf);
+}
+@font-face {
+    font-family: Cabinet;
+    src: url(/fonts/Cabinet\ of\ the\ Outlander.ttf);
+}
+@font-face {
+    font-family: jaja;
+    src: url(/fonts/JajanGorenganDemoRegular.ttf);
+}
+
 
 
 
@@ -10,6 +27,16 @@ a {
     text-decoration: none !important;
 }
 
+
+h2 {
+    font-family: Cabinet;
+    
+}
+
+h3 {
+    font-family: Magestic;
+    text-decoration: underline double;
+}
 .navbar-nav li:hover {
     border-radius: 9px;
     background-color: #fff;
@@ -21,17 +48,18 @@ ul {
     list-style: none;
 }
 
-
 /* edicion del nav */
 
 #nav {
     background-color:#EAF2FD !important;
+    
 }
 
 .nav_img {
     width: 50px;
     height: 35px;
-    margin-right: 5px;    
+    margin-right: 5px; 
+       
 }
 
 .navbar {
@@ -40,6 +68,7 @@ ul {
 
 .navbar-nav {
     margin-left: 200px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
 /* edicion del main */
@@ -49,27 +78,42 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 80px ;
+    padding: 50px ;
 }
 
 .main_text {    
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    
+        
 }
 
 .main_tittle h2 {
-    font-size: 45px;
+    font-size: 60px;
     margin-bottom: 30px;
     
 }
 
 .main_tittle p {
-    font-size: 22px;
+    margin-left: 100px;
+    font-family: jaja;
+    font-size: 40px;
     font-weight: bold;
 }
+
+.maquinaDeEscribir {
+    margin-left: 130px;
+    margin-bottom: 20px;
+
+    
+}
+
+.redes {
+    margin-left: 160px;
+}
+
+
 
 #escribir {
     font-size: 22px;
@@ -112,6 +156,7 @@ main {
 #aboutMe {
     padding: 50px 150px;
     background-color: #EAF2FD;
+    
 }
 
 .about_me {
@@ -127,6 +172,11 @@ main {
     margin-bottom: 15px;
 }
 
+.firma {
+    font-size: 2rem;
+    font-family: bourdos;
+    
+}
 /* edicion skills and hobbies */
 
 .section_skills {
@@ -139,7 +189,7 @@ main {
 
 .skill_tittle {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin: 50px;
 }
 
 .skill_list {
@@ -149,12 +199,20 @@ main {
 }
 
 .habilidad {
-    padding: 90px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgb(212, 212, 212);
     width: 150px;
     height: 150px;
-    margin: 10px;    
+    margin: 10px; 
+    border-radius: 50%;   
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
+
 
 .habilidad:hover {
     
@@ -203,7 +261,7 @@ main {
 	width: 300px;
 	height: 300px;
     margin: 10px;
-	background: rgb(212, 212, 212);
+	background: #fff;
 	position: relative;
 	transform-style: preserve-3d;
 	transition: .7s ease;
@@ -244,16 +302,21 @@ main {
     width: 100%;
     height: 100%;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 .tarjeta-wrap:hover .tarjeta{
 	transform: rotateY(180deg);
 }
 
-.atras_div li{
-    
+.atras_div{
    
-
+   width: 100px;%;
 }
 
 .card1 {
@@ -480,12 +543,17 @@ main {
 
     .navbar {
         padding: 0;
+        padding-left: 110px;
+        
     }
 
 }
 
 
 @media (max-width: 1206px){
+    .navbar {
+        padding: 0;
+    }
     .navbar-nav {
         margin-left: 150px;
     }
@@ -501,8 +569,28 @@ main {
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    
+    .main_tittle p {
+        margin 0px;
+        
+    }
+
+    .maquinaDeEscribir {
+        margin: 0px;
+
+    }
+
+    .redes {
+        margin: 0px;
+    }
+
+
     .main_img {
         margin-bottom: 50px;
+    }
+    .main_tittle p {
+        margin: 0;
     }
     #aboutMe {
         padding: 10px 50px;
@@ -523,6 +611,7 @@ main {
     flex-direction: column-reverse;
     align-items: start;
 }
+
 .main_img {
     margin-bottom: 0 50px 0 50px;
 }
