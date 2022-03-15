@@ -94,7 +94,7 @@ main {
 
 .main_tittle h2 {
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom:  0px;
     
 }
 
@@ -151,6 +151,7 @@ main {
     width: 368px;
     height: 368px;
     border-radius: 50% ;
+    border: 5px double black
     
     
 }
@@ -169,7 +170,7 @@ main {
 
 .about_me h3 {
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .about_me p {
@@ -177,6 +178,7 @@ main {
 }
 
 .firma {
+    margin-top: 30px;
     font-size: 2rem;
     font-family: bourdos;
     
@@ -581,7 +583,7 @@ main {
 
     
     .main_tittle p {
-        margin 0px;
+        margin: 0px;
         
     }
 
