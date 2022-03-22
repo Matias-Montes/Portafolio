@@ -435,16 +435,16 @@
                             <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
 
                         <label for="nombre"> Nombre: </label>
-                        <input id="nombre" type="text" placeholder="Ingrese su Nombre">
+                        <input id="nombre" type="text" placeholder="Ingrese su Nombre" required maxlength="50">
 
                         <label for="email"> E-Mail: </label>
-                        <input id="email" type="email" placeholder="Ingrese su E-Mail">
+                        <input id="email" type="email" placeholder="Ingrese su E-Mail" required>
 
                         <label for="asunto"> Asunto: </label>
-                        <input id="asunto" type="text" placeholder="Ingrese el Asunto">
+                        <input id="asunto" type="text" placeholder="Ingrese el Asunto" required maxlength="50">
 
                         <label for="mensaje"> Nombre: </label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su Mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su Mensaje" required maxlength="300"></textarea>
 
 
                         <button type="submit">Enviar</button>
