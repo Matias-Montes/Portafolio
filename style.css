@@ -36,7 +36,7 @@ h2 {
 
 h3 {
     font-family: Magestic;
-    text-decoration: underline double;
+    text-decoration: underline double;    
 }
 .navbar-nav li:hover {
     border-radius: 9px;
@@ -80,16 +80,14 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 50px;
-    margin: 50px    100px;
+    margin: 50px 100px;
 }
 
 .main_text {    
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    
-        
+    justify-content: space-evenly;        
 }
 
 .main_tittle h2 {
@@ -112,11 +110,6 @@ main {
     
 }
 
-.redes {
-    margin-left: 160px;
-}
-
-
 
 #escribir {
     font-size: 22px;
@@ -136,9 +129,12 @@ main {
     text-decoration: underline !important;
 }
 
+.redes {
+    margin-left: 150px;
+}
+
 .main_tittle img {
-    margin: 10px;
-    
+    margin: 10px;    
 }
 
 .main_left {    
@@ -151,9 +147,7 @@ main {
     width: 368px;
     height: 368px;
     border-radius: 50% ;
-    border: 5px double black
-    
-    
+    border: 5px double black    
 }
 
 /* edicion Sobre mi*/
@@ -422,7 +416,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: auto;
     margin: 20px;
 }
@@ -572,37 +565,41 @@ main {
 }
 
 @media (max-width: 1050px){
+    h3 {
+        padding-top: 50px;
+    }
+
     .navbar-nav {
         margin-left: 60px;
+        margin-bottom: 0;
     }
+
     main {          
-        margin: 50px;
+        margin: 0px 0;
         flex-direction: column-reverse;
-        align-items: center;
-    }
+        text-align: center;        
+    }    
 
     
-    .main_tittle p {
-        margin: 0px;
-        
-    }
-
     .maquinaDeEscribir {
         margin: 0px;
+    }
 
+    .retrato {
+        margin: 0 150px;
+    }
+    .main_img {
+        float: right;
+        margin: 50px 0;
+    }
+    .main_tittle p {
+        margin: 30px 0;
     }
 
     .redes {
-        margin: 0px;
+        margin: 30px 0;
     }
 
-
-    .main_img {
-        margin-bottom: 50px;
-    }
-    .main_tittle p {
-        margin: 0;
-    }
     #aboutMe {
         padding: 10px 50px;
     }
@@ -610,6 +607,20 @@ main {
         
         padding: 0;
     }
+
+    #form {
+        margin: 0;
+    }
+
+    
+    .form_form {
+    width: 100%;
+}
+
+    .form_img {
+    width: 60%; 
+    margin: 10px;
+}
 
 }
 
@@ -650,6 +661,23 @@ main {
     }
     main {          
         margin: 0;
+    }
+    .retrato {
+        margin: 30px 30px;
+    }
+    .main_img {
+        margin: 0;
+    }
+   
+    .main_tittle p {
+        margin: 30px 0;
+    }
+    .redes {
+        margin: 30px 0;
+    }
+
+    .habilidad img {    
+        height: 75px;
     }
    
 
